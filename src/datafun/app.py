@@ -130,12 +130,11 @@ and write the count to a text file.
 """
 
 XLSX_INPUT: Final[Path] = RAW_DIR / "Feedback.xlsx"
-XLSX_OUTPUT: Final[Path] = PROCESSED_DIR / "xlsx_feedback_github_count.txt"
+XLSX_OUTPUT: Final[Path] = PROCESSED_DIR / "xlsx_feedback_python_count.txt"
 XLSX_COLUMN: Final[str] = "A"  # CUSTOM
-XLSX_WORD: Final[str] = "GitHub"  # CUSTOM
+XLSX_WORD: Final[str] = "Python"  # CUSTOM
 WHY_XLSX_WORD: Final[str] = r"""
-Feedback mentions GitHub when students hit repository issues,
-so counting the word estimates how often that came up.
+Feedback may mention Python when students discuss coding or project work, so counting the word estimates how often Python came up.
 """
 
 # === TEXT: SUMMARIZE A DOCUMENT ===
