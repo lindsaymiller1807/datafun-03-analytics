@@ -1,21 +1,37 @@
 # Project Documentation
 
-> Use this hosted documentation site to tell your
-> data story. Include a narrative telling your
-> results, observations, and interpretations.
-> Display visuals as needed for a compelling story.
+This project explores healthy life expectancy using the 2020 World Happiness dataset while demonstrating a professional Python data analytics workflow.
 
-## Professional Workflow
+## Custom Analysis
 
-See [**Workflow B: Apply Example Project**](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
-to get a project like this running on your machine.
+For my custom analysis, I changed the CSV pipeline from summarizing the overall Ladder score to summarizing Healthy life expectancy.
 
-## Professional Projects
+The analysis processed 153 countries. Healthy life expectancy ranged from about 45.2 years to 76.8 years, with an average of about 64.45 years.
 
-- We code like the pros to help us **focus on the analytics**.
-- Most files in this repository will never be touched.
-- If curious about a file, check out the
-  [Professional Python Project Explainer](https://denisecase.github.io/professional-python-project-explainer/).
+I observed a large difference between the lowest and highest values. This suggests that healthy lifespan varies substantially across countries and provides another way to compare quality-of-life conditions beyond the overall happiness score.
+
+## Project Workflow
+
+The project follows an Extract / Transform / Verify / Load workflow:
+
+- Extract data from the source file
+- Transform the selected values into descriptive statistics
+- Verify the results
+- Load the verified results into a processed output file
+
+## What This Project Demonstrates
+
+This project demonstrates my ability to work with multiple data file types in Python and apply a consistent ETL process to each one.
+
+The project includes:
+
+- CSV data analysis using descriptive statistics
+- JSON data grouped by category
+- Excel text analysis
+- Plain-text file analysis
+- Verification of results before output
+- Git and GitHub version control
+- Automated checks and hosted project documentation
 
 ## Documentation Index
 
