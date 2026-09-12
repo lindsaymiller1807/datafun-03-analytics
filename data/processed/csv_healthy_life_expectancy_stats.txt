@@ -1,0 +1,6 @@
+Statistics for column: Healthy life expectancy
+Count: 153
+Minimum: 45.20
+Maximum: 76.80
+Mean: 64.45
+Standard Deviation: 7.06

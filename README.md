@@ -16,6 +16,17 @@ This project demonstrates my work with Python data analytics using multiple file
 I am using this project to practice the Extract / Transform / Verify / Load process while building my skills with Python, Git, GitHub, and professional project organization.
 
 As I continue the project, I will modify the analysis to investigate my own question and document what I changed, why I changed it, and what I learned from the results.
+As I continue the project, I will modify the analysis to investigate my own question and document what I changed, why I changed it, and what I learned from the results.
+
+## Custom Analysis: Healthy Life Expectancy
+
+For my custom analysis, I changed the CSV pipeline from summarizing the overall Ladder score to summarizing Healthy life expectancy in the 2020 World Happiness dataset.
+
+I chose this variable because healthy life expectancy is an important measure of quality of life and gives another way to compare countries beyond an overall happiness score.
+
+The analysis processed 153 countries. Healthy life expectancy ranged from about 45.2 years to 76.8 years, with an average of about 64.45 years.
+
+I observed a large difference between the lowest and highest values. This suggests that expected healthy lifespan varies substantially across countries and can provide useful information about differences in quality-of-life conditions.
 
 ## Motivation
 

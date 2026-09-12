@@ -93,13 +93,11 @@ and write the statistics to a text file.
 """
 
 CSV_INPUT: Final[Path] = RAW_DIR / "2020_happiness.csv"
-CSV_OUTPUT: Final[Path] = PROCESSED_DIR / "csv_ladder_score_stats.txt"
-CSV_COLUMN: Final[str] = "Ladder score"  # CUSTOM
+CSV_OUTPUT: Final[Path] = PROCESSED_DIR / "csv_healthy_life_expectancy_stats.txt"
+CSV_COLUMN: Final[str] = "Healthy life expectancy"  # CUSTOM
 WHY_CSV_COLUMN: Final[str] = r"""
-The ladder score is the survey's overall happiness measure,
-so its distribution is the natural first summary of this dataset.
+I chose healthy life expectancy because it is an important measure of quality of life. Summarizing this variable helps me compare how expected healthy lifespan varies across countries.
 """
-
 # === JSON: COUNT RECORDS BY A CATEGORY ===
 
 JSON_PIPELINE_DESCRIPTION: Final[str] = r"""
