@@ -51,4 +51,3 @@ The project processes four different types of raw data and writes the results to
 - **XLSX** - reads the feedback Excel file, extracts text from the selected column, counts occurrences of the selected word, verifies the result, and writes the count to a text file.
 
 - **TXT** - reads the Romeo and Juliet text file, counts its lines, words, and characters, verifies the results, and writes the summary to a text file.
-
