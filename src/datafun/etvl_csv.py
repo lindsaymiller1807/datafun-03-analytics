@@ -10,7 +10,7 @@ Practice key Python skills related to:
     - error handling with raise
     - calculating statistics with the statistics module
     - writing results to a text file
-    """
+"""
 
 # This file contains the CSV ETLV pipeline for the project.
 # It processes the selected numeric column and writes verified summary statistics.
