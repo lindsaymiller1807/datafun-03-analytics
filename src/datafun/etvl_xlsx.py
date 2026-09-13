@@ -13,10 +13,10 @@ Practice key Python skills related to:
     - writing results to a text file
 
 OBS:
-  This file is part of the working example project.
-  First, run and understand the example as provided.
-  When you take ownership of the project, adapt this pipeline
-  to process data for your new problem.
+    This file contains the Excel ETLV pipeline for the project.
+    It reads feedback text from an Excel file, counts occurrences
+    of the selected word, verifies the result, and writes the count
+    to a text file.
 
 RUN:
   No need.

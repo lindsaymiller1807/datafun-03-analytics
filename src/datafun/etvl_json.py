@@ -13,10 +13,9 @@ Practice key Python skills related to:
     - writing results to a text file
 
 OBS:
-  This file is part of the working example project.
-  First, run and understand the example as provided.
-  When you take ownership of the project, adapt this pipeline
-  to process data for your new problem.
+    This file contains the JSON ETLV pipeline for the project.
+    It reads astronaut data, groups records by spacecraft,
+    verifies the results, and writes the counts to a text file.
 
 RUN:
   No need.

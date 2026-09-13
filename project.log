@@ -631,3 +631,448 @@ of a plain-text document before any deeper reading.
 2026-09-12 14:53:07 | INFO | P03 | ===================================
 2026-09-12 14:53:07 | INFO | P03 | END main() - Executed successfully!
 2026-09-12 14:53:07 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | === RUN START ===
+2026-09-12 17:53:40 | INFO | P03 | project=P03
+2026-09-12 17:53:40 | INFO | P03 | repo_dir=datafun-03-analytics
+2026-09-12 17:53:40 | INFO | P03 | python=3.14.7
+2026-09-12 17:53:40 | INFO | P03 | os=Darwin 25.6.0
+2026-09-12 17:53:40 | INFO | P03 | shell=zsh
+2026-09-12 17:53:40 | INFO | P03 | cwd=.
+2026-09-12 17:53:40 | INFO | P03 | github_actions=False
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | START main()
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | raw folder = data/raw
+2026-09-12 17:53:40 | INFO | P03 | processed folder = data/processed
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | CSV pipeline
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | Pipeline: 
+Read the world happiness CSV file,
+extract the selected numeric column,
+calculate descriptive statistics,
+verify the results,
+and write the statistics to a text file.
+
+2026-09-12 17:53:40 | INFO | P03 | Column: Healthy life expectancy
+2026-09-12 17:53:40 | INFO | P03 | Why: 
+I chose healthy life expectancy because it is an important measure of quality of life. Summarizing this variable helps me compare how expected healthy lifespan varies across countries.
+
+2026-09-12 17:53:40 | INFO | P03 | CSV: START
+2026-09-12 17:53:40 | INFO | P03 | Extracted 153 rows from 2020_happiness.csv
+2026-09-12 17:53:40 | INFO | P03 | Converted 153 values, skipped 0, from 'Healthy life expectancy'
+2026-09-12 17:53:40 | INFO | P03 | Calculated statistics: {'count': 153.0, 'min': 45.20000076, 'max': 76.80458069, 'mean': 64.44552916509804, 'stdev': 7.057847634303701}
+2026-09-12 17:53:40 | INFO | P03 | Verified statistics: all checks passed.
+2026-09-12 17:53:40 | INFO | P03 | Wrote report to csv_healthy_life_expectancy_stats.txt
+2026-09-12 17:53:40 | INFO | P03 | CSV: wrote data/processed/csv_healthy_life_expectancy_stats.txt
+2026-09-12 17:53:40 | INFO | P03 | CSV: END
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | JSON pipeline
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | Pipeline: 
+Read the astronauts JSON file,
+extract the list of people,
+count people by spacecraft,
+verify the results,
+and write the counts to a text file.
+
+2026-09-12 17:53:40 | INFO | P03 | Grouping: people by craft
+2026-09-12 17:53:40 | INFO | P03 | Why: 
+Each person is assigned to a craft, so counting by craft shows
+how the crew is distributed across spacecraft.
+
+2026-09-12 17:53:40 | INFO | P03 | JSON: START
+2026-09-12 17:53:40 | INFO | P03 | JSON: wrote data/processed/json_astronauts_by_craft.txt
+2026-09-12 17:53:40 | INFO | P03 | JSON: END
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | XLSX pipeline
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | Pipeline: 
+Read the feedback Excel file,
+extract text from the selected column,
+count occurrences of the selected word,
+verify the result,
+and write the count to a text file.
+
+2026-09-12 17:53:40 | INFO | P03 | Word: Python in column A
+2026-09-12 17:53:40 | INFO | P03 | Why: 
+Feedback may mention Python when students discuss coding or project work, so counting the word estimates how often Python came up.
+
+2026-09-12 17:53:40 | INFO | P03 | XLSX: START
+2026-09-12 17:53:40 | INFO | P03 | XLSX: wrote data/processed/xlsx_feedback_python_count.txt
+2026-09-12 17:53:40 | INFO | P03 | XLSX: END
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | TEXT pipeline
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | Pipeline: 
+Read the Romeo and Juliet text file,
+count its lines, words, and characters,
+verify the results,
+and write the summary to a text file.
+
+2026-09-12 17:53:40 | INFO | P03 | Why: 
+Line, word, and character counts give a quick size profile
+of a plain-text document before any deeper reading.
+
+2026-09-12 17:53:40 | INFO | P03 | TXT: START
+2026-09-12 17:53:40 | INFO | P03 | TXT: wrote data/processed/txt_summary.txt
+2026-09-12 17:53:40 | INFO | P03 | TXT: END
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 17:53:40 | INFO | P03 | END main() - Executed successfully!
+2026-09-12 17:53:40 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | === RUN START ===
+2026-09-12 18:18:14 | INFO | P03 | project=P03
+2026-09-12 18:18:14 | INFO | P03 | repo_dir=datafun-03-analytics
+2026-09-12 18:18:14 | INFO | P03 | python=3.14.7
+2026-09-12 18:18:14 | INFO | P03 | os=Darwin 25.6.0
+2026-09-12 18:18:14 | INFO | P03 | shell=zsh
+2026-09-12 18:18:14 | INFO | P03 | cwd=.
+2026-09-12 18:18:14 | INFO | P03 | github_actions=False
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | START main()
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | raw folder = data/raw
+2026-09-12 18:18:14 | INFO | P03 | processed folder = data/processed
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | CSV pipeline
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | Pipeline: 
+Read the world happiness CSV file,
+extract the selected numeric column,
+calculate descriptive statistics,
+verify the results,
+and write the statistics to a text file.
+
+2026-09-12 18:18:14 | INFO | P03 | Column: Healthy life expectancy
+2026-09-12 18:18:14 | INFO | P03 | Why: 
+I chose healthy life expectancy because it is an important measure of quality of life. Summarizing this variable helps me compare how expected healthy lifespan varies across countries.
+
+2026-09-12 18:18:14 | INFO | P03 | CSV: START
+2026-09-12 18:18:14 | INFO | P03 | Extracted 153 rows from 2020_happiness.csv
+2026-09-12 18:18:14 | INFO | P03 | Converted 153 values, skipped 0, from 'Healthy life expectancy'
+2026-09-12 18:18:14 | INFO | P03 | Calculated statistics: {'count': 153.0, 'min': 45.20000076, 'max': 76.80458069, 'mean': 64.44552916509804, 'stdev': 7.057847634303701}
+2026-09-12 18:18:14 | INFO | P03 | Verified statistics: all checks passed.
+2026-09-12 18:18:14 | INFO | P03 | Wrote report to csv_healthy_life_expectancy_stats.txt
+2026-09-12 18:18:14 | INFO | P03 | CSV: wrote data/processed/csv_healthy_life_expectancy_stats.txt
+2026-09-12 18:18:14 | INFO | P03 | CSV: END
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | JSON pipeline
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | Pipeline: 
+Read the astronauts JSON file,
+extract the list of people,
+count people by spacecraft,
+verify the results,
+and write the counts to a text file.
+
+2026-09-12 18:18:14 | INFO | P03 | Grouping: people by craft
+2026-09-12 18:18:14 | INFO | P03 | Why: 
+Each person is assigned to a craft, so counting by craft shows
+how the crew is distributed across spacecraft.
+
+2026-09-12 18:18:14 | INFO | P03 | JSON: START
+2026-09-12 18:18:14 | INFO | P03 | JSON: wrote data/processed/json_astronauts_by_craft.txt
+2026-09-12 18:18:14 | INFO | P03 | JSON: END
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | XLSX pipeline
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | Pipeline: 
+Read the feedback Excel file,
+extract text from the selected column,
+count occurrences of the selected word,
+verify the result,
+and write the count to a text file.
+
+2026-09-12 18:18:14 | INFO | P03 | Word: Python in column A
+2026-09-12 18:18:14 | INFO | P03 | Why: 
+Feedback may mention Python when students discuss coding or project work, so counting the word estimates how often Python came up.
+
+2026-09-12 18:18:14 | INFO | P03 | XLSX: START
+2026-09-12 18:18:14 | INFO | P03 | XLSX: wrote data/processed/xlsx_feedback_python_count.txt
+2026-09-12 18:18:14 | INFO | P03 | XLSX: END
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | TEXT pipeline
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | Pipeline: 
+Read the Romeo and Juliet text file,
+count its lines, words, and characters,
+verify the results,
+and write the summary to a text file.
+
+2026-09-12 18:18:14 | INFO | P03 | Why: 
+Line, word, and character counts give a quick size profile
+of a plain-text document before any deeper reading.
+
+2026-09-12 18:18:14 | INFO | P03 | TXT: START
+2026-09-12 18:18:14 | INFO | P03 | TXT: wrote data/processed/txt_summary.txt
+2026-09-12 18:18:14 | INFO | P03 | TXT: END
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:14 | INFO | P03 | END main() - Executed successfully!
+2026-09-12 18:18:14 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | === RUN START ===
+2026-09-12 18:18:26 | INFO | P03 | project=P03
+2026-09-12 18:18:26 | INFO | P03 | repo_dir=datafun-03-analytics
+2026-09-12 18:18:26 | INFO | P03 | python=3.14.7
+2026-09-12 18:18:26 | INFO | P03 | os=Darwin 25.6.0
+2026-09-12 18:18:26 | INFO | P03 | shell=zsh
+2026-09-12 18:18:26 | INFO | P03 | cwd=.
+2026-09-12 18:18:26 | INFO | P03 | github_actions=False
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | START main()
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | raw folder = data/raw
+2026-09-12 18:18:26 | INFO | P03 | processed folder = data/processed
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | CSV pipeline
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | Pipeline: 
+Read the world happiness CSV file,
+extract the selected numeric column,
+calculate descriptive statistics,
+verify the results,
+and write the statistics to a text file.
+
+2026-09-12 18:18:26 | INFO | P03 | Column: Healthy life expectancy
+2026-09-12 18:18:26 | INFO | P03 | Why: 
+I chose healthy life expectancy because it is an important measure of quality of life. Summarizing this variable helps me compare how expected healthy lifespan varies across countries.
+
+2026-09-12 18:18:26 | INFO | P03 | CSV: START
+2026-09-12 18:18:26 | INFO | P03 | Extracted 153 rows from 2020_happiness.csv
+2026-09-12 18:18:26 | INFO | P03 | Converted 153 values, skipped 0, from 'Healthy life expectancy'
+2026-09-12 18:18:26 | INFO | P03 | Calculated statistics: {'count': 153.0, 'min': 45.20000076, 'max': 76.80458069, 'mean': 64.44552916509804, 'stdev': 7.057847634303701}
+2026-09-12 18:18:26 | INFO | P03 | Verified statistics: all checks passed.
+2026-09-12 18:18:26 | INFO | P03 | Wrote report to csv_healthy_life_expectancy_stats.txt
+2026-09-12 18:18:26 | INFO | P03 | CSV: wrote data/processed/csv_healthy_life_expectancy_stats.txt
+2026-09-12 18:18:26 | INFO | P03 | CSV: END
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | JSON pipeline
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | Pipeline: 
+Read the astronauts JSON file,
+extract the list of people,
+count people by spacecraft,
+verify the results,
+and write the counts to a text file.
+
+2026-09-12 18:18:26 | INFO | P03 | Grouping: people by craft
+2026-09-12 18:18:26 | INFO | P03 | Why: 
+Each person is assigned to a craft, so counting by craft shows
+how the crew is distributed across spacecraft.
+
+2026-09-12 18:18:26 | INFO | P03 | JSON: START
+2026-09-12 18:18:26 | INFO | P03 | JSON: wrote data/processed/json_astronauts_by_craft.txt
+2026-09-12 18:18:26 | INFO | P03 | JSON: END
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | XLSX pipeline
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | Pipeline: 
+Read the feedback Excel file,
+extract text from the selected column,
+count occurrences of the selected word,
+verify the result,
+and write the count to a text file.
+
+2026-09-12 18:18:26 | INFO | P03 | Word: Python in column A
+2026-09-12 18:18:26 | INFO | P03 | Why: 
+Feedback may mention Python when students discuss coding or project work, so counting the word estimates how often Python came up.
+
+2026-09-12 18:18:26 | INFO | P03 | XLSX: START
+2026-09-12 18:18:26 | INFO | P03 | XLSX: wrote data/processed/xlsx_feedback_python_count.txt
+2026-09-12 18:18:26 | INFO | P03 | XLSX: END
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | TEXT pipeline
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | Pipeline: 
+Read the Romeo and Juliet text file,
+count its lines, words, and characters,
+verify the results,
+and write the summary to a text file.
+
+2026-09-12 18:18:26 | INFO | P03 | Why: 
+Line, word, and character counts give a quick size profile
+of a plain-text document before any deeper reading.
+
+2026-09-12 18:18:26 | INFO | P03 | TXT: START
+2026-09-12 18:18:26 | INFO | P03 | TXT: wrote data/processed/txt_summary.txt
+2026-09-12 18:18:26 | INFO | P03 | TXT: END
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 18:18:26 | INFO | P03 | END main() - Executed successfully!
+2026-09-12 18:18:26 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | === RUN START ===
+2026-09-12 19:39:05 | INFO | P03 | project=P03
+2026-09-12 19:39:05 | INFO | P03 | repo_dir=datafun-03-analytics
+2026-09-12 19:39:05 | INFO | P03 | python=3.14.7
+2026-09-12 19:39:05 | INFO | P03 | os=Darwin 25.6.0
+2026-09-12 19:39:05 | INFO | P03 | shell=zsh
+2026-09-12 19:39:05 | INFO | P03 | cwd=.
+2026-09-12 19:39:05 | INFO | P03 | github_actions=False
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | START main()
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | raw folder = data/raw
+2026-09-12 19:39:05 | INFO | P03 | processed folder = data/processed
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | CSV pipeline
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | Pipeline: 
+Read the world happiness CSV file,
+extract the selected numeric column,
+calculate descriptive statistics,
+verify the results,
+and write the statistics to a text file.
+
+2026-09-12 19:39:05 | INFO | P03 | Column: Healthy life expectancy
+2026-09-12 19:39:05 | INFO | P03 | Why: 
+I chose healthy life expectancy because it is an important measure of quality of life. Summarizing this variable helps me compare how expected healthy lifespan varies across countries.
+
+2026-09-12 19:39:05 | INFO | P03 | CSV: START
+2026-09-12 19:39:05 | INFO | P03 | Extracted 153 rows from 2020_happiness.csv
+2026-09-12 19:39:05 | INFO | P03 | Converted 153 values, skipped 0, from 'Healthy life expectancy'
+2026-09-12 19:39:05 | INFO | P03 | Calculated statistics: {'count': 153.0, 'min': 45.20000076, 'max': 76.80458069, 'mean': 64.44552916509804, 'stdev': 7.057847634303701}
+2026-09-12 19:39:05 | INFO | P03 | Verified statistics: all checks passed.
+2026-09-12 19:39:05 | INFO | P03 | Wrote report to csv_healthy_life_expectancy_stats.txt
+2026-09-12 19:39:05 | INFO | P03 | CSV: wrote data/processed/csv_healthy_life_expectancy_stats.txt
+2026-09-12 19:39:05 | INFO | P03 | CSV: END
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | JSON pipeline
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | Pipeline: 
+Read the astronauts JSON file,
+extract the list of people,
+count people by spacecraft,
+verify the results,
+and write the counts to a text file.
+
+2026-09-12 19:39:05 | INFO | P03 | Grouping: people by craft
+2026-09-12 19:39:05 | INFO | P03 | Why: 
+Each person is assigned to a craft, so counting by craft shows
+how the crew is distributed across spacecraft.
+
+2026-09-12 19:39:05 | INFO | P03 | JSON: START
+2026-09-12 19:39:05 | INFO | P03 | JSON: wrote data/processed/json_astronauts_by_craft.txt
+2026-09-12 19:39:05 | INFO | P03 | JSON: END
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | XLSX pipeline
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | Pipeline: 
+Read the feedback Excel file,
+extract text from the selected column,
+count occurrences of the selected word,
+verify the result,
+and write the count to a text file.
+
+2026-09-12 19:39:05 | INFO | P03 | Word: Python in column A
+2026-09-12 19:39:05 | INFO | P03 | Why: 
+Feedback may mention Python when students discuss coding or project work, so counting the word estimates how often Python came up.
+
+2026-09-12 19:39:05 | INFO | P03 | XLSX: START
+2026-09-12 19:39:05 | INFO | P03 | XLSX: wrote data/processed/xlsx_feedback_python_count.txt
+2026-09-12 19:39:05 | INFO | P03 | XLSX: END
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | TEXT pipeline
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | Pipeline: 
+Read the Romeo and Juliet text file,
+count its lines, words, and characters,
+verify the results,
+and write the summary to a text file.
+
+2026-09-12 19:39:05 | INFO | P03 | Why: 
+Line, word, and character counts give a quick size profile
+of a plain-text document before any deeper reading.
+
+2026-09-12 19:39:05 | INFO | P03 | TXT: START
+2026-09-12 19:39:05 | INFO | P03 | TXT: wrote data/processed/txt_summary.txt
+2026-09-12 19:39:05 | INFO | P03 | TXT: END
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:05 | INFO | P03 | END main() - Executed successfully!
+2026-09-12 19:39:05 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | === RUN START ===
+2026-09-12 19:39:18 | INFO | P03 | project=P03
+2026-09-12 19:39:18 | INFO | P03 | repo_dir=datafun-03-analytics
+2026-09-12 19:39:18 | INFO | P03 | python=3.14.7
+2026-09-12 19:39:18 | INFO | P03 | os=Darwin 25.6.0
+2026-09-12 19:39:18 | INFO | P03 | shell=zsh
+2026-09-12 19:39:18 | INFO | P03 | cwd=.
+2026-09-12 19:39:18 | INFO | P03 | github_actions=False
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | START main()
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | raw folder = data/raw
+2026-09-12 19:39:18 | INFO | P03 | processed folder = data/processed
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | CSV pipeline
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | Pipeline: 
+Read the world happiness CSV file,
+extract the selected numeric column,
+calculate descriptive statistics,
+verify the results,
+and write the statistics to a text file.
+
+2026-09-12 19:39:18 | INFO | P03 | Column: Healthy life expectancy
+2026-09-12 19:39:18 | INFO | P03 | Why: 
+I chose healthy life expectancy because it is an important measure of quality of life. Summarizing this variable helps me compare how expected healthy lifespan varies across countries.
+
+2026-09-12 19:39:18 | INFO | P03 | CSV: START
+2026-09-12 19:39:18 | INFO | P03 | Extracted 153 rows from 2020_happiness.csv
+2026-09-12 19:39:18 | INFO | P03 | Converted 153 values, skipped 0, from 'Healthy life expectancy'
+2026-09-12 19:39:18 | INFO | P03 | Calculated statistics: {'count': 153.0, 'min': 45.20000076, 'max': 76.80458069, 'mean': 64.44552916509804, 'stdev': 7.057847634303701}
+2026-09-12 19:39:18 | INFO | P03 | Verified statistics: all checks passed.
+2026-09-12 19:39:18 | INFO | P03 | Wrote report to csv_healthy_life_expectancy_stats.txt
+2026-09-12 19:39:18 | INFO | P03 | CSV: wrote data/processed/csv_healthy_life_expectancy_stats.txt
+2026-09-12 19:39:18 | INFO | P03 | CSV: END
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | JSON pipeline
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | Pipeline: 
+Read the astronauts JSON file,
+extract the list of people,
+count people by spacecraft,
+verify the results,
+and write the counts to a text file.
+
+2026-09-12 19:39:18 | INFO | P03 | Grouping: people by craft
+2026-09-12 19:39:18 | INFO | P03 | Why: 
+Each person is assigned to a craft, so counting by craft shows
+how the crew is distributed across spacecraft.
+
+2026-09-12 19:39:18 | INFO | P03 | JSON: START
+2026-09-12 19:39:18 | INFO | P03 | JSON: wrote data/processed/json_astronauts_by_craft.txt
+2026-09-12 19:39:18 | INFO | P03 | JSON: END
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | XLSX pipeline
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | Pipeline: 
+Read the feedback Excel file,
+extract text from the selected column,
+count occurrences of the selected word,
+verify the result,
+and write the count to a text file.
+
+2026-09-12 19:39:18 | INFO | P03 | Word: Python in column A
+2026-09-12 19:39:18 | INFO | P03 | Why: 
+Feedback may mention Python when students discuss coding or project work, so counting the word estimates how often Python came up.
+
+2026-09-12 19:39:18 | INFO | P03 | XLSX: START
+2026-09-12 19:39:18 | INFO | P03 | XLSX: wrote data/processed/xlsx_feedback_python_count.txt
+2026-09-12 19:39:18 | INFO | P03 | XLSX: END
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | TEXT pipeline
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | Pipeline: 
+Read the Romeo and Juliet text file,
+count its lines, words, and characters,
+verify the results,
+and write the summary to a text file.
+
+2026-09-12 19:39:18 | INFO | P03 | Why: 
+Line, word, and character counts give a quick size profile
+of a plain-text document before any deeper reading.
+
+2026-09-12 19:39:18 | INFO | P03 | TXT: START
+2026-09-12 19:39:18 | INFO | P03 | TXT: wrote data/processed/txt_summary.txt
+2026-09-12 19:39:18 | INFO | P03 | TXT: END
+2026-09-12 19:39:18 | INFO | P03 | ===================================
+2026-09-12 19:39:18 | INFO | P03 | END main() - Executed successfully!
+2026-09-12 19:39:18 | INFO | P03 | ===================================

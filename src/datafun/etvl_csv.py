@@ -10,17 +10,13 @@ Practice key Python skills related to:
     - error handling with raise
     - calculating statistics with the statistics module
     - writing results to a text file
+    """
 
-OBS:
-  This file is part of the working example project.
-  First, run and understand the example as provided.
-  When you take ownership of the project, adapt this pipeline
-  to process data for your new problem.
+# This file contains the CSV ETLV pipeline for the project.
+# It processes the selected numeric column and writes verified summary statistics.
 
-RUN:
-  No need.
-  We don't usually run supporting modules like this one directly.
-"""
+# Run with:
+# uv run python -m datafun.app
 
 # === DECLARE IMPORTS (BRING IN FREE CODE) ===
 

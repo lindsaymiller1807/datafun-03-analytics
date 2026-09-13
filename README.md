@@ -15,9 +15,6 @@ This project demonstrates my work with Python data analytics using multiple file
 
 I am using this project to practice the Extract / Transform / Verify / Load process while building my skills with Python, Git, GitHub, and professional project organization.
 
-As I continue the project, I will modify the analysis to investigate my own question and document what I changed, why I changed it, and what I learned from the results.
-As I continue the project, I will modify the analysis to investigate my own question and document what I changed, why I changed it, and what I learned from the results.
-
 ## Custom Analysis: Healthy Life Expectancy
 
 For my custom analysis, I changed the CSV pipeline from summarizing the overall Ladder score to summarizing Healthy life expectancy in the 2020 World Happiness dataset.
@@ -43,7 +40,7 @@ Defining clear steps makes a data pipeline easy to implement.
 This project illustrates **ETVL data pipelines** for extracting raw data,
 transforming it, verifying results, and loading useful output.
 
-The example project processes four different types of raw data:
+The project processes four different types of raw data:
 
 - **CSV** - summarizes a numeric column from world happiness data
 - **JSON** - counts astronauts by spacecraft
@@ -54,11 +51,9 @@ Although the data and processing differ,
 each pipeline follows the same ETVL structure:
 **Extract / Transform / Verify / Load**
 
-Run the example first and read the code
-to see how the same workflow is applied to different data.
+Review the project code and data-processing workflow.
 
-When you take ownership of the project,
-adapt the processing pipelines to generate new analytics.
+I adapted the processing pipelines to generate new analytics and explore a custom question using the project data.
 
 ## Important Folders and Files
 
@@ -76,18 +71,17 @@ carefully.
 
 ## Challenges
 
-Challenges are expected.
-Sometimes instructions may not quite match your operating system.
-When issues occur, share screenshots, error messages,
-and details about what you tried.
-Working through issues is part of implementing professional projects.
+One challenge was making sure the project was fully connected to my own GitHub repository and that GitHub Pages and Actions were configured correctly.
+
+I also had to make sure my code changes were saved before rerunning the project so the updated analysis would appear in the terminal.
+
+Working through these issues helped me become more comfortable with troubleshooting, GitHub, and the project workflow.
 
 ## Success
 
-After completing Phase 1. **Start & Run**, you'll have the example project,
-running on your machine.
-A new file `project.log` will appear in the root project folder
-and running the example script will print out:
+The project runs successfully on my machine and writes output files to `data/processed/`.
+
+Running the project script completes all four pipelines and ends with:
 
 ```shell
 ===================================
@@ -109,7 +103,7 @@ Follow the guide for the **full instructions**.
 
 Open a machine terminal in your `Repos` folder,
 change directory (cd) into the new folder,
-and run `code .` to open only this example project in VS Code:
+and run `code .` to open only this project in VS Code:
 
 ```shell
 git clone https://github.com/lindsaymiller1807/datafun-03-analytics.git
@@ -173,28 +167,12 @@ git push -u origin main
   to scroll through past commands.
 - Use `CTRL+f` to find (and replace) text within a file.
 
-## Much Can Be Ignored
+## Additional Resources
 
-- You do not need to add to or modify `tests/`.
-  Tests are recommended and provided for example only.
-- Many files are silent helpers.
-  [Explore](https://denisecase.github.io/professional-python-project-explainer/)
-  as you like, but most files are never touched.
-- You do NOT need to understand everything;
-  let understanding build over time.
-
-## As Needed
-
-If VS Code does not automatically use the new `.venv` environment:
-
-1. Open the Command Palette (`Ctrl+Shift+P`).
-2. Run **Python: Select Interpreter**.
-3. Select the interpreter from this project's `.venv` folder.
-
-If VS Code still does not recognize the environment or newly installed tools:
-
-1. Open the Command Palette (`Ctrl+Shift+P`).
-2. Run **Developer: Reload Window**.
+- [Concepts](docs/concepts.md)
+- [Data Card](docs/data-card.md)
+- [API Documentation](docs/api.md)
+- [Glossary](docs/glossary.md)
 
 ## Troubleshooting >>>
 

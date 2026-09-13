@@ -1,4 +1,4 @@
-"""tests/test_app.py - Smoke test for the example.
+"""tests/test_app.py - Smoke test for the project.
 
 WHY: Professional Python projects include tests to verify that code runs
      correctly and to catch problems early when changes are made.
@@ -9,7 +9,7 @@ OBS: You do not need to read or modify this file.
 
 
 def test_app_runs() -> None:
-    """Confirm the example module runs without error."""
+    """Confirm the project module runs without error."""
     from datafun.app import main
 
     main()
