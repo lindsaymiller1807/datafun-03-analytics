@@ -36,6 +36,7 @@ The project includes:
 ## Documentation Index
 
 - **Home** - this landing page
+- [Project Customization](project-instructions.md)
 - [**Concepts**](./concepts.md)
 - [**Data Card**](./data-card.md)
 - [**API**](./api.md)
